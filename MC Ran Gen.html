@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MC Random Generator</title>
+</head>
+<body onload="MC_gen()">
+
+<script>
+function MC_gen() {
+	var us = ["Pasquale", "Azam", "Leila", "Ivan", "Jan", "Noriko"]
+	var x = Math.floor(Math.random()*6)
+	document.getElementById("result").innerHTML = us[x];
+	
+	document.getElementById("timestamp").innerHTML = Date();
+}
+</script>
+
+<h1 id="result"></h1>
+<p id="timestamp"></p>
+
+</body>
+</html>
